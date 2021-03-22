@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using HomeTask_1.Enums;
 
 namespace HomeTask_1
 {
@@ -20,18 +19,28 @@ namespace HomeTask_1
             {
                 Console.WriteLine("Finish");
             };
+
+            fileVisitor.FileFound += (s, e) =>
+            {
+                Console.WriteLine($"File: {e.FoundItem.Name} are found");
+            };
             
             fileVisitor.FilteredFileFound += (s, e) =>
             {
-                Console.WriteLine(e.FoundItem.Name + " are found");
-
-                if (e.FoundItem.Name.EndsWith(".jpeg"))
-                {
-                    e.Action = BehaviorAction.Stop;
-                }
+                Console.WriteLine($"Filtered file: {e.FoundItem.Name} are found");
             };
             
-            var fileSystemInfos = fileVisitor.GetFileSystemInfos().ToList();
+            fileVisitor.DirectoryFound += (s, e) =>
+            {
+                Console.WriteLine($"Directory: {e.FoundItem.Name} are found");
+            };
+            
+            fileVisitor.FilteredDirectoryFound += (s, e) =>
+            {
+                Console.WriteLine($"Filtered directory: {e.FoundItem.Name} are found");
+            };
+
+            fileVisitor.GetFileSystemInfos().ToList();
         }
     }
 }
