@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6049a609_002Db71e_002D4af5_002D8145_002Dd0c1047b61aa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetFileSystemInfos_TestFolderExistAndHaveFileInfos_CountSameAsExpected" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistAndHaveFileInfos_CountSameAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistAndHaveFilterFileInfos_CountSameAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistSubscribeFilterFileFound_StopSearch&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistFilterFileFound_FilesNotContains&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistAndFileFound_EventArgsHasFoundFile&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistAndFolderFound_EventArgsHasFoundFile&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExistAndFolderFound_StopSearch&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExist_StartEventEmit&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::9851EB8C-D70F-428C-B889-28596BC977FA::net5.0::HomeTask_2.FileSystemVisitorTests.GetFileSystemInfos_TestFolderExist_StopEventEmit&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
