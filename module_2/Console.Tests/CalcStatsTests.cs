@@ -54,5 +54,15 @@ namespace Console.Tests
 
             result.Should().Contain(expectedText);
         }
+        
+        [Test]
+        public void Process_IntArrayIsCorrect_AverageResultTextContains()
+        {
+            var expectedText = "o) average value = 18.166666";
+
+            var result = calcStats.Process(TestArray);
+
+            result.Should().Contain(expectedText);
+        }
     }
 }
