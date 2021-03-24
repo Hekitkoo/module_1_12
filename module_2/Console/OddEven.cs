@@ -16,7 +16,14 @@ namespace Console
 
             for (var current = startRange; current <= endRange; current++)
             {
-                stringBuilder.Append(current % 2 == 0 ? EvenText : OddText);
+                if (current == 0)
+                {
+                    stringBuilder.Append(current);
+                }
+                else
+                {
+                    stringBuilder.Append(current % 2 == 0 ? EvenText : OddText);
+                }
 
                 if (current != endRange)
                 {
