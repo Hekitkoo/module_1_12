@@ -10,6 +10,7 @@ namespace Console.Tests
         private const int EndIndex = 100;
         private const int TestRangeEndIndex = 2;
         private const string EvenText = "Even";
+        private const string OddText = "Odd";
         private OddEven oddEven;
 
         [SetUp]
@@ -29,7 +30,7 @@ namespace Console.Tests
         [Test]
         public void Print_RangeAreSet_ResultIsSameAsExpected()
         {
-            var expectedResult = $"{StartIndex}, {EvenText}";
+            var expectedResult = $"{OddText}, {EvenText}";
 
             var result = oddEven.Print(StartIndex, TestRangeEndIndex);
 
@@ -50,6 +51,16 @@ namespace Console.Tests
             var expectedResult = EvenText;
 
             var result = oddEven.Print(TestRangeEndIndex, TestRangeEndIndex);
+
+            result.Should().Be(expectedResult);
+        }
+
+        [Test]
+        public void Print_RangeAreSetWithOddRange_OddTextResult()
+        {
+            var expectedResult = OddText;
+
+            var result = oddEven.Print(StartIndex, StartIndex);
 
             result.Should().Be(expectedResult);
         }
