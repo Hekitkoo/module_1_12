@@ -34,5 +34,15 @@ namespace Console.Tests
 
             result.Should().Contain(expectedText);
         }
+        
+        [Test]
+        public void Process_IntArrayIsCorrect_MaximumValueResultTextContains()
+        {
+            var expectedText = "o) maximum value = 92";
+
+            var result = calcStats.Process(TestArray);
+
+            result.Should().Contain(expectedText);
+        }
     }
 }
