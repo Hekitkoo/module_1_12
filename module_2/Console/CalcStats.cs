@@ -13,8 +13,10 @@ namespace Console
             var stringBuilder = new StringBuilder();
             var minimumValue = numbers.Min();
             var maxValue = numbers.Max();
+            var numbersLength = numbers.Length;
             stringBuilder.AppendLine($"o) minimum value = {minimumValue}");
             stringBuilder.AppendLine($"o) maximum value = {maxValue}");
+            stringBuilder.AppendLine($"o) number of elements in the sequence = {numbersLength}");
 
             return stringBuilder.ToString();
         }
