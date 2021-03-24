@@ -16,15 +16,10 @@ namespace Console
 
             for (var current = startRange; current <= endRange; current++)
             {
-                if (current == 0)
-                {
-                    stringBuilder.Append(current);
-                }
-                else
-                {
-                    stringBuilder.Append(current % 2 == 0 ? EvenText : OddText);
-                }
+                var currentText = Print(current);
 
+                stringBuilder.Append(currentText);
+                
                 if (current != endRange)
                 {
                     stringBuilder.Append(", ");
@@ -36,7 +31,12 @@ namespace Console
 
         public string Print(int number)
         {
-            return string.Empty;
+            if (number == 0)
+            {
+                return number.ToString();
+            }
+
+            return number % 2 == 0 ? EvenText : OddText;
         }
         
         private void ValidateStartEndRange(int startRange, int endRange)
