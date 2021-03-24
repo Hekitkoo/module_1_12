@@ -34,19 +34,24 @@ namespace Console
 
         public string ToLCD(string number)
         {
-            var chars = Pars(number);
+            var chars = Parse(number);
             var stringBuilder = new StringBuilder();
 
-            foreach (var symbol in chars)
+            for (var index = 0; index <= chars.Length - 1; index++)
             {
-                digits.TryGetValue(symbol, out var value);
+                digits.TryGetValue(chars[index], out var value);
                 stringBuilder.Append(value);
+
+                if (chars.Length > 1 && index != chars.Length - 1)
+                {
+                    stringBuilder.AppendLine();
+                }
             }
 
             return stringBuilder.ToString();
         }
 
-        private IEnumerable<char> Pars(string number)
+        private char[] Parse(string number)
         {
             return number.ToCharArray();
         }
