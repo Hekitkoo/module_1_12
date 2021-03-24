@@ -32,13 +32,13 @@ namespace Console.Tests
 
             var result = oddEven.Print(StartIndex, TestRangeEndIndex);
 
-            result.Should().BeSameAs(expectedResult);
+            result.Should().Be(expectedResult);
         }
 
         [Test]
         public void Print_RangeAreSetWrong_ThrowException()
         {
-            Action action = () => oddEven.Print(StartIndex, TestRangeEndIndex);
+            Action action = () => oddEven.Print(TestRangeEndIndex, StartIndex);
 
             action.Should().Throw<ArgumentException>();
         }
