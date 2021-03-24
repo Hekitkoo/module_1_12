@@ -6,6 +6,7 @@ namespace Console
     public class OddEven
     {
         private const string EvenText = "Even";
+        private const string OddText = "Odd";
 
         public string Print(int startRange, int endRange)
         {
@@ -15,14 +16,7 @@ namespace Console
 
             for (var current = startRange; current <= endRange; current++)
             {
-                if (current % 2 == 0)
-                {
-                    stringBuilder.Append(EvenText);
-                }
-                else
-                {
-                    stringBuilder.Append(current);
-                }
+                stringBuilder.Append(current % 2 == 0 ? EvenText : OddText);
 
                 if (current != endRange)
                 {
