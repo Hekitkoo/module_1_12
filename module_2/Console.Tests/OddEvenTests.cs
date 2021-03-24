@@ -11,6 +11,7 @@ namespace Console.Tests
         private const int TestRangeEndIndex = 2;
         private const string EvenText = "Even";
         private const string OddText = "Odd";
+        private const int PrimeIndex = 0;
         private OddEven oddEven;
 
         [SetUp]
@@ -61,6 +62,16 @@ namespace Console.Tests
             var expectedResult = OddText;
 
             var result = oddEven.Print(StartIndex, StartIndex);
+
+            result.Should().Be(expectedResult);
+        }
+
+        [Test]
+        public void Print_RangeAreSetWithPrimeRange_PrimeTextResult()
+        {
+            var expectedResult = PrimeIndex.ToString();
+
+            var result = oddEven.Print(PrimeIndex, PrimeIndex);
 
             result.Should().Be(expectedResult);
         }
