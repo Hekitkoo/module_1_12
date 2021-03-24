@@ -24,7 +24,7 @@ namespace Console.Tests
 
             action.Should().Throw<ArgumentException>();
         }
-        
+
         [Test]
         public void Process_IntArrayIsCorrect_MinimumValueResultTextContains()
         {
@@ -34,11 +34,21 @@ namespace Console.Tests
 
             result.Should().Contain(expectedText);
         }
-        
+
         [Test]
         public void Process_IntArrayIsCorrect_MaximumValueResultTextContains()
         {
             var expectedText = "o) maximum value = 92";
+
+            var result = calcStats.Process(TestArray);
+
+            result.Should().Contain(expectedText);
+        }
+
+        [Test]
+        public void Process_IntArrayIsCorrect_NumberCountResultTextContains()
+        {
+            var expectedText = "o) number of elements in the sequence = 6";
 
             var result = calcStats.Process(TestArray);
 
