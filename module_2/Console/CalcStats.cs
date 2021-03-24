@@ -14,9 +14,11 @@ namespace Console
             var minimumValue = numbers.Min();
             var maxValue = numbers.Max();
             var numbersLength = numbers.Length;
+            var averageValue = numbers.Average();
             stringBuilder.AppendLine($"o) minimum value = {minimumValue}");
             stringBuilder.AppendLine($"o) maximum value = {maxValue}");
             stringBuilder.AppendLine($"o) number of elements in the sequence = {numbersLength}");
+            stringBuilder.AppendLine($"o) average value = {averageValue}");
 
             return stringBuilder.ToString();
         }

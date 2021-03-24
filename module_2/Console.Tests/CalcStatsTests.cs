@@ -58,7 +58,7 @@ namespace Console.Tests
         [Test]
         public void Process_IntArrayIsCorrect_AverageResultTextContains()
         {
-            var expectedText = "o) average value = 18.166666";
+            var expectedText = "o) average value = 21.833333333333332";
 
             var result = calcStats.Process(TestArray);
 
