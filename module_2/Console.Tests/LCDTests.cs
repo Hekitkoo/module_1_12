@@ -133,5 +133,17 @@ namespace Console.Tests
 
             result.Should().Be(expectedResult);
         }
+
+        [Test]
+        public void ToLCD_RightNineOneZeroInput_ReturnStringAsExpected()
+        {
+            var testInput = 910.ToString();
+            var expectedResult =
+                $"._.{Environment.NewLine}|_|{Environment.NewLine}..|{Environment.NewLine}...{Environment.NewLine}..|{Environment.NewLine}..|{Environment.NewLine}._.{Environment.NewLine}|.|{Environment.NewLine}|_|";
+
+            var result = lcd.ToLCD(testInput);
+
+            result.Should().Be(expectedResult);
+        }
     }
 }
