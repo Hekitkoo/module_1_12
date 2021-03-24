@@ -12,7 +12,9 @@ namespace Console
 
             var stringBuilder = new StringBuilder();
             var minimumValue = numbers.Min();
-            stringBuilder.Append($"o) minimum value = {minimumValue}");
+            var maxValue = numbers.Max();
+            stringBuilder.AppendLine($"o) minimum value = {minimumValue}");
+            stringBuilder.AppendLine($"o) maximum value = {maxValue}");
 
             return stringBuilder.ToString();
         }
