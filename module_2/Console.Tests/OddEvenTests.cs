@@ -8,7 +8,7 @@ namespace Console.Tests
     {
         private const int StartIndex = 1;
         private const int EndIndex = 100;
-        private const int TestRangeEndIndex = 2;
+        private const int EvenIndex = 2;
         private const string EvenText = "Even";
         private const string OddText = "Odd";
         private const int PrimeIndex = 0;
@@ -33,7 +33,7 @@ namespace Console.Tests
         {
             var expectedResult = $"{OddText}, {EvenText}";
 
-            var result = oddEven.Print(StartIndex, TestRangeEndIndex);
+            var result = oddEven.Print(StartIndex, EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -41,7 +41,7 @@ namespace Console.Tests
         [Test]
         public void Print_RangeAreSetWrong_ThrowException()
         {
-            Action action = () => oddEven.Print(TestRangeEndIndex, StartIndex);
+            Action action = () => oddEven.Print(EvenIndex, StartIndex);
 
             action.Should().Throw<ArgumentException>();
         }
@@ -51,7 +51,7 @@ namespace Console.Tests
         {
             var expectedResult = EvenText;
 
-            var result = oddEven.Print(TestRangeEndIndex, TestRangeEndIndex);
+            var result = oddEven.Print(EvenIndex, EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -72,6 +72,36 @@ namespace Console.Tests
             var expectedResult = PrimeIndex.ToString();
 
             var result = oddEven.Print(PrimeIndex, PrimeIndex);
+
+            result.Should().Be(expectedResult);
+        }
+
+        [Test]
+        public void Print_NumberIsInput_EvenTextResult()
+        {
+            var expectedResult = EvenText;
+
+            var result = oddEven.Print(EvenIndex);
+
+            result.Should().Be(expectedResult);
+        }
+
+        [Test]
+        public void Print_NumberIsInput_OddTextResult()
+        {
+            var expectedResult = OddText;
+
+            var result = oddEven.Print(StartIndex);
+
+            result.Should().Be(expectedResult);
+        }
+
+        [Test]
+        public void Print_NumberIsInput_PrimeTextResult()
+        {
+            var expectedResult = PrimeIndex.ToString();
+
+            var result = oddEven.Print(PrimeIndex);
 
             result.Should().Be(expectedResult);
         }

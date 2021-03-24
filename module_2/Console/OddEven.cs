@@ -34,6 +34,11 @@ namespace Console
             return stringBuilder.ToString();
         }
 
+        public string Print(int number)
+        {
+            return string.Empty;
+        }
+        
         private void ValidateStartEndRange(int startRange, int endRange)
         {
             if (startRange > endRange)
