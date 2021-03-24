@@ -5,15 +5,24 @@ namespace Console
 {
     public class OddEven
     {
+        private const string EvenText = "Even";
+
         public string Print(int startRange, int endRange)
         {
             ValidateStartEndRange(startRange, endRange);
+
             var stringBuilder = new StringBuilder();
-            
 
             for (var current = startRange; current <= endRange; current++)
             {
-                stringBuilder.Append(current);
+                if (current % 2 == 0)
+                {
+                    stringBuilder.Append(EvenText);
+                }
+                else
+                {
+                    stringBuilder.Append(current);
+                }
 
                 if (current != endRange)
                 {
