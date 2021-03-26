@@ -15,7 +15,7 @@ namespace Console.Tests
         }
 
         [Test]
-        public void ToLCD_WrongInput_StringIsEmpty()
+        public void ToLCD_Lowercase_StringIsEmpty()
         {
             var testInput = "a";
 
