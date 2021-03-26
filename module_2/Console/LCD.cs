@@ -34,13 +34,17 @@ namespace Console
 
         public string ToLCD(string number)
         {
-            var chars = Parse(number);
+            var chars = number.ToCharArray();
             var stringBuilder = new StringBuilder();
 
             for (var index = 0; index <= chars.Length - 1; index++)
             {
-                digits.TryGetValue(chars[index], out var value);
-                stringBuilder.Append(value);
+                var found = digits.TryGetValue(chars[index], out var value);
+
+                if (found)
+                {
+                    stringBuilder.Append(value);
+                }
 
                 if (chars.Length > 1 && index != chars.Length - 1)
                 {
@@ -49,11 +53,6 @@ namespace Console
             }
 
             return stringBuilder.ToString();
-        }
-
-        private char[] Parse(string number)
-        {
-            return number.ToCharArray();
         }
     }
 }
