@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace Console.Tests
 {
-    public class OddEvenTests
+    public class NumberQualifierTests
     {
         private const int StartIndex = 1;
         private const int EndIndex = 100;
@@ -12,18 +12,18 @@ namespace Console.Tests
         private const string EvenText = "Even";
         private const string OddText = "Odd";
         private const int PrimeIndex = 0;
-        private OddEven oddEven;
+        private NumberQualifier numberQualifier;
 
         [SetUp]
         public void Setup()
         {
-            oddEven = new OddEven();
+            numberQualifier = new NumberQualifier();
         }
 
         [Test]
         public void Print_RangeAreSet_ResultIsNotNullOrEmpty()
         {
-            var result = oddEven.Print(StartIndex, EndIndex);
+            var result = numberQualifier.Print(StartIndex, EndIndex);
 
             result.Should().NotBeNullOrEmpty();
         }
@@ -33,7 +33,7 @@ namespace Console.Tests
         {
             var expectedResult = $"{OddText}, {EvenText}";
 
-            var result = oddEven.Print(StartIndex, EvenIndex);
+            var result = numberQualifier.Print(StartIndex, EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -41,7 +41,7 @@ namespace Console.Tests
         [Test]
         public void Print_RangeAreSetWrong_ThrowException()
         {
-            Action action = () => oddEven.Print(EvenIndex, StartIndex);
+            Action action = () => numberQualifier.Print(EvenIndex, StartIndex);
 
             action.Should().Throw<ArgumentException>();
         }
@@ -51,7 +51,7 @@ namespace Console.Tests
         {
             var expectedResult = EvenText;
 
-            var result = oddEven.Print(EvenIndex, EvenIndex);
+            var result = numberQualifier.Print(EvenIndex, EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -61,7 +61,7 @@ namespace Console.Tests
         {
             var expectedResult = OddText;
 
-            var result = oddEven.Print(StartIndex, StartIndex);
+            var result = numberQualifier.Print(StartIndex, StartIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -71,7 +71,7 @@ namespace Console.Tests
         {
             var expectedResult = PrimeIndex.ToString();
 
-            var result = oddEven.Print(PrimeIndex, PrimeIndex);
+            var result = numberQualifier.Print(PrimeIndex, PrimeIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -81,7 +81,7 @@ namespace Console.Tests
         {
             var expectedResult = EvenText;
 
-            var result = oddEven.Print(EvenIndex);
+            var result = numberQualifier.Print(EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -91,7 +91,7 @@ namespace Console.Tests
         {
             var expectedResult = OddText;
 
-            var result = oddEven.Print(StartIndex);
+            var result = numberQualifier.Print(StartIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -101,7 +101,7 @@ namespace Console.Tests
         {
             var expectedResult = PrimeIndex.ToString();
 
-            var result = oddEven.Print(PrimeIndex);
+            var result = numberQualifier.Print(PrimeIndex);
 
             result.Should().Be(expectedResult);
         }

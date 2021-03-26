@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Console
 {
-    public class OddEven
+    public class NumberQualifier
     {
         private const string EvenText = "Even";
         private const string OddText = "Odd";
