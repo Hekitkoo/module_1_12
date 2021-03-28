@@ -14,7 +14,10 @@ namespace Console
 
         public string Process(int[] numbers)
         {
-            Validate(numbers);
+            if (numbers.Length == default)
+            {
+                throw new ArgumentException();
+            }
 
             var stringBuilder = new StringBuilder();
 
@@ -54,14 +57,6 @@ namespace Console
         private int GetMin(IEnumerable<int> numbers)
         {
             return numbers.Min();
-        }
-
-        private void Validate(int[] numbers)
-        {
-            if (numbers.Length == default)
-            {
-                throw new ArgumentException();
-            }
         }
     }
 }
