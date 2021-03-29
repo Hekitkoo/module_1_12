@@ -81,7 +81,7 @@ namespace Console.Tests
         {
             var expectedResult = EvenText;
 
-            var result = numberQualifier.Print(EvenIndex);
+            var result = numberQualifier.Print(EvenIndex,EvenIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -91,7 +91,7 @@ namespace Console.Tests
         {
             var expectedResult = OddText;
 
-            var result = numberQualifier.Print(StartIndex);
+            var result = numberQualifier.Print(StartIndex, StartIndex);
 
             result.Should().Be(expectedResult);
         }
@@ -101,7 +101,7 @@ namespace Console.Tests
         {
             var expectedResult = PrimeIndex.ToString();
 
-            var result = numberQualifier.Print(PrimeIndex);
+            var result = numberQualifier.Print(PrimeIndex, PrimeIndex);
 
             result.Should().Be(expectedResult);
         }
