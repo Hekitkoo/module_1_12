@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=071a94ea_002Dc957_002D4bd3_002Da97b_002D4a448c3c3372/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Process_IntArrayIsEmpty_ArgumentException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsEmpty_ArgumentException&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsCorrect_MinimumValueResultTextContains&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsCorrect_MaximumValueResultTextContains&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsCorrect_NumberCountResultTextContains&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsCorrect_AverageResultTextContains&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.LCDTests.ToLCD_RightInput_ReturnStringAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.LCDTests.ToLCD_WrongInput_StringIsEmpty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.LCDTests.ToLCD_RightZeroInput_ReturnStringAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.LCDTests.ToLCD_RightOneInput_ReturnStringAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.LCDTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.NumberQualifierTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=118aeee1_002D7f13_002D4e56_002D9630_002D2863b889c014/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Print_RangeAreSet_StringIsNotNullOrEmpty" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.OddEvenTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::89AF9CFB-4809-4BAF-91DF-CF4EF1EE6DB0::net5.0::Console.Tests.CalcStatsTests.Process_IntArrayIsEmpty_ArgumentException&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
