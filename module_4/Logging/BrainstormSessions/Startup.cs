@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace BrainstormSessions
 {
@@ -27,7 +28,8 @@ namespace BrainstormSessions
 
         public void Configure(IApplicationBuilder app,
             IWebHostEnvironment env,
-            IServiceProvider serviceProvider)
+            IServiceProvider serviceProvider,
+            ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -35,7 +37,7 @@ namespace BrainstormSessions
 
                 InitializeDatabaseAsync(repository).Wait();
             }
-
+            loggerFactory.AddLog4Net();
             app.UseStaticFiles();
 
             app.UseRouting();
