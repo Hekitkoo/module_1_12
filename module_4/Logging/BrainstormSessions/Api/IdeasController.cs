@@ -81,6 +81,7 @@ namespace BrainstormSessions.Api
 
             if (session == null)
             {
+                _logger.Error($"Session with {sessionId} didn't found");
                 return NotFound(sessionId);
             }
 
