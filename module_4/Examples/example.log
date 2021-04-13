@@ -1,0 +1,112 @@
+Time,Thread,Level,Logger,Message
+10-Apr-2021 18:04:36,1,INFO ,Microsoft.Hosting.Lifetime,Now listening on: https://localhost:5001
+10-Apr-2021 18:04:36,1,INFO ,Microsoft.Hosting.Lifetime,Now listening on: http://localhost:5000
+10-Apr-2021 18:04:36,1,INFO ,Microsoft.Hosting.Lifetime,Application started. Press Ctrl+C to shut down.
+10-Apr-2021 18:04:36,1,INFO ,Microsoft.Hosting.Lifetime,Hosting environment: Development
+10-Apr-2021 18:04:36,1,INFO ,Microsoft.Hosting.Lifetime,Content root path: C:\Users\Mykyta_Sokurenko\Documents\NonProduction\DCP\Homeworks\module_1_12\module_4\Logging\BrainstormSessions
+10-Apr-2021 18:04:37,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/  
+10-Apr-2021 18:04:37,4,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:38,4,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:38,4,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:38,4,INFO ,BrainstormSessions.Controllers.HomeController,{BrainstormSessions.ViewModels.StormSessionViewModel}
+10-Apr-2021 18:04:38,4,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:04:39,4,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 844.7666ms.
+10-Apr-2021 18:04:39,4,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 1052.0185ms
+10-Apr-2021 18:04:39,4,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:39,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 1437.345ms 200 text/html; charset=utf-8
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 POST https://localhost:5001/ application/x-www-form-urlencoded 29
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(NewSessionModel) on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.EntityFrameworkCore.Update,Saved 1 entities to in-memory store.
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Mvc.RedirectToActionResult,Executing RedirectResult, redirecting to /.
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 214.5702ms
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:42,12,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 310.1316ms 302 
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/  
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:42,11,INFO ,BrainstormSessions.Controllers.HomeController,{BrainstormSessions.ViewModels.StormSessionViewModel, BrainstormSessions.ViewModels.StormSessionViewModel}
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 16.8031ms.
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 41.3504ms
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:42,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 85.8828ms 200 text/html; charset=utf-8
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/forsessionactionresult/444  
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions)'
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "ForSessionActionResult", controller = "Ideas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BrainstormSessions.ClientModels.IdeaDTO]]] ForSessionActionResult(Int32) on controller BrainstormSessions.Api.IdeasController (BrainstormSessions).
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:45,5,ERROR,BrainstormSessions.Api.IdeasController,Session with 444 didn't found
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor,Executing ObjectResult, writing value of type 'System.Int32'.
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions) in 170.6889ms
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions)'
+10-Apr-2021 18:04:45,5,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 228.5596ms 404 application/json; charset=utf-8
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/forsessionactionresult/444  
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions)'
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "ForSessionActionResult", controller = "Ideas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BrainstormSessions.ClientModels.IdeaDTO]]] ForSessionActionResult(Int32) on controller BrainstormSessions.Api.IdeasController (BrainstormSessions).
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:46,9,ERROR,BrainstormSessions.Api.IdeasController,Session with 444 didn't found
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor,Executing ObjectResult, writing value of type 'System.Int32'.
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions) in 28.1069ms
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Api.IdeasController.ForSessionActionResult (BrainstormSessions)'
+10-Apr-2021 18:04:46,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 75.9895ms 404 application/json; charset=utf-8
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/Session/Index/2  
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32]) on controller BrainstormSessions.Controllers.SessionController (BrainstormSessions).
+10-Apr-2021 18:04:48,11,DEBUG,BrainstormSessions.Controllers.SessionController,Session search has started
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:48,11,DEBUG,BrainstormSessions.Controllers.SessionController,Session has founded
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 25.0869ms.
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions) in 59.173ms
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:48,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 123.3843ms 200 text/html; charset=utf-8
+10-Apr-2021 18:04:48,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/api/ideas/forsession/2  
+10-Apr-2021 18:04:48,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 8.9801ms 404 
+10-Apr-2021 18:04:50,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 POST https://localhost:5001/api/ideas/create application/json 44
+10-Apr-2021 18:04:50,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 8.9286ms 404 
+10-Apr-2021 18:04:54,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 POST https://localhost:5001/api/ideas/create application/json 49
+10-Apr-2021 18:04:54,9,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 9.7969ms 404 
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/  
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:55,4,INFO ,BrainstormSessions.Controllers.HomeController,{BrainstormSessions.ViewModels.StormSessionViewModel, BrainstormSessions.ViewModels.StormSessionViewModel}
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 8.8625ms.
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 29.4431ms
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:55,4,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 71.0802ms 200 text/html; charset=utf-8
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 POST https://localhost:5001/ application/x-www-form-urlencoded 29
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(NewSessionModel) on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.EntityFrameworkCore.Update,Saved 1 entities to in-memory store.
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.RedirectToActionResult,Executing RedirectResult, redirecting to /.
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 29.9116ms
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 77.3591ms 302 
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/  
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:04:58,11,INFO ,BrainstormSessions.Controllers.HomeController,{BrainstormSessions.ViewModels.StormSessionViewModel, BrainstormSessions.ViewModels.StormSessionViewModel, BrainstormSessions.ViewModels.StormSessionViewModel}
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 9.9498ms.
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 33.9195ms
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+10-Apr-2021 18:04:58,11,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 81.1069ms 200 text/html; charset=utf-8
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/Session/Index/3  
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executing endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Route matched with {action = "Index", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32]) on controller BrainstormSessions.Controllers.SessionController (BrainstormSessions).
+10-Apr-2021 18:05:00,8,DEBUG,BrainstormSessions.Controllers.SessionController,Session search has started
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.EntityFrameworkCore.Infrastructure,Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+10-Apr-2021 18:05:00,8,DEBUG,BrainstormSessions.Controllers.SessionController,Session has founded
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executing ViewResult, running view Index.
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor,Executed ViewResult - view Index executed in 9.9363ms.
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker,Executed action BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions) in 38.3834ms
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Routing.EndpointMiddleware,Executed endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+10-Apr-2021 18:05:00,8,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 83.3913ms 200 text/html; charset=utf-8
+10-Apr-2021 18:05:00,5,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request starting HTTP/2 GET https://localhost:5001/api/ideas/forsession/3  
+10-Apr-2021 18:05:00,5,INFO ,Microsoft.AspNetCore.Hosting.Diagnostics,Request finished in 8.9191ms 404 
