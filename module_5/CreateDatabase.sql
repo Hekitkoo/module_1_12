@@ -39,7 +39,7 @@ CREATE TABLE [dbo].[Driver] (
     [DriverId] INT IDENTITY(1, 1) NOT NULL,
     [FirstName] NVARCHAR(50) NOT NULL,
     [LastName] NVARCHAR(50) NOT NULL,
-    [Birthdate] NVARCHAR(50) NOT NULL,
+    [Birthdate] DATETIME NOT NULL,
     CONSTRAINT [pk_Driver] PRIMARY KEY CLUSTERED([DriverId])
 );
 
