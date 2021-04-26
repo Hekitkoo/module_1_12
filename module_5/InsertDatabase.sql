@@ -1,5 +1,7 @@
 USE [SqlModule];
 
+GO
+
 /* Data from xml*/
 
 INSERT INTO [dbo].[Warehouse] VALUES
@@ -382,7 +384,7 @@ DECLARE @minDistance INT = 100;
 DECLARE @maxDistance INT = 3000;
 
 INSERT INTO [dbo].[Route](
-	[OriginalWarehouseId],
+	[OriginWarehouseId],
 	[DestinationWarehouseId],
 	[Distance]
 )

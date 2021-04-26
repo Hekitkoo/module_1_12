@@ -53,11 +53,11 @@ CREATE TABLE [dbo].[DriverTruck] (
 
 CREATE TABLE [dbo].[Route] (
     [RouteId] INT IDENTITY(1, 1) NOT NULL,
-    [OriginalWarehouseId] INT NOT NULL,
+    [OriginWarehouseId] INT NOT NULL,
     [DestinationWarehouseId] INT NOT NULL,
     [Distance] FLOAT NOT NULL,
     CONSTRAINT [pk_Route] PRIMARY KEY CLUSTERED([RouteId]),
-    CONSTRAINT [fk_Route_Warehouse_Original] FOREIGN KEY ([OriginalWarehouseId]) REFERENCES [dbo].[Warehouse]([WarehouseId]),
+    CONSTRAINT [fk_Route_Warehouse_Original] FOREIGN KEY ([OriginWarehouseId]) REFERENCES [dbo].[Warehouse]([WarehouseId]),
     CONSTRAINT [fk_Route_Warehouse_Destination] FOREIGN KEY ([DestinationWarehouseId]) REFERENCES [dbo].[Warehouse]([WarehouseId])
 );
 
