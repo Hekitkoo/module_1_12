@@ -2,7 +2,7 @@ USE [SqlModule];
 
 GO
 
-/* First View */
+/* First View better */
 
 CREATE VIEW [dbo].[vShipment_1]
 AS
@@ -15,7 +15,7 @@ SELECT
 	cargoResult.TotalWeight,
 	cargoResult.TotalVolume,
 	(route.Distance * truck.FuelConsumption) / 100 AS FuelSpent
-FROM dbo.Shipment shipment
+FROM [dbo].[Shipment] shipment
 	CROSS APPLY
 	(
 		SELECT SUM(cargo.Weight) AS TotalWeight, SUM(cargo.Volume) AS TotalVolume
@@ -25,11 +25,11 @@ FROM dbo.Shipment shipment
 	) cargoResult
 	LEFT JOIN [dbo].[Route] route
 		ON route.RouteId = shipment.RouteId
-	LEFT JOIN [dbo].Warehouse originWarehouse
+	LEFT JOIN [dbo].[Warehouse] originWarehouse
 		ON originWarehouse.WarehouseId = route.OriginWarehouseId
-	LEFT JOIN [dbo].Warehouse destinationWarehouse
+	LEFT JOIN [dbo].[Warehouse] destinationWarehouse
 		ON destinationWarehouse.WarehouseId = route.DestinationWarehouseId
-	LEFT JOIN [dbo].Truck truck
+	LEFT JOIN [dbo].[Truck] truck
 		ON truck.TruckId = shipment.TruckId;
 
 GO
@@ -61,15 +61,15 @@ SELECT
 	TotalVolume,
 	(route.Distance * truck.FuelConsumption) / 100 AS FuelSpent
 FROM CargoShipCTE
-	LEFT JOIN dbo.[Shipment] shipment
+	LEFT JOIN [dbo].[Shipment] shipment
 		ON CargoShipCTE.ShipmentId = shipment.ShipmentId
-	LEFT JOIN dbo.[Route] route
+	LEFT JOIN [dbo].[Route] route
 		ON route.RouteId = shipment.RouteId
-	LEFT JOIN dbo.Warehouse originWarehouse
+	LEFT JOIN [dbo].[Warehouse] originWarehouse
 		ON originWarehouse.WarehouseId = route.OriginWarehouseId
-	LEFT JOIN dbo.Warehouse destinationWarehouse
+	LEFT JOIN [dbo].[Warehouse] destinationWarehouse
 		ON destinationWarehouse.WarehouseId = route.DestinationWarehouseId
-	LEFT JOIN dbo.Truck truck
+	LEFT JOIN [dbo].[Truck] truck
 		ON truck.TruckId = shipment.TruckId
 
 GO
