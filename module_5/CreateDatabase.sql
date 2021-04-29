@@ -28,10 +28,10 @@ CREATE TABLE [dbo].[Truck] (
     [TruckId] INT IDENTITY(1, 1) NOT NULL,
     [Brand] NVARCHAR(50) NOT NULL,
     [RegistrationNumber] NVARCHAR(50) NOT NULL,
-    [Year] NVARCHAR(50) NULL,
-    [Payload] INT NOT NULL,
-    [FuelConsumption] INT NOT NULL,
-    [Volume] INT NOT NULL,
+    [Year] INT NULL,
+    [Payload] FLOAT NOT NULL,
+    [FuelConsumption] FLOAT NOT NULL,
+    [Volume] FLOAT NOT NULL,
     CONSTRAINT [pk_Truck] PRIMARY KEY CLUSTERED([TruckId])
 );
 
@@ -78,7 +78,7 @@ CREATE TABLE [dbo].[Shipment] (
 CREATE TABLE [dbo].[Cargo] (
     [CargoId] INT IDENTITY(1, 1) NOT NULL,
     [Weight] DECIMAL NOT NULL,
-    [Volume] INT NOT NULL,
+    [Volume] FLOAT NOT NULL,
     [SenderId] INT NOT NULL,
     [RecipientId] INT NOT NULL,
     [ShipmentId] INT NULL,
