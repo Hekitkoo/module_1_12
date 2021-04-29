@@ -64,8 +64,8 @@ CREATE TABLE [dbo].[Route] (
 CREATE TABLE [dbo].[Shipment] (
     [ShipmentId] INT IDENTITY(1, 1) NOT NULL,
     [RouteId] INT NOT NULL,
-	[DriverId] INT NOT NULL,
-	[TruckId] INT NOT NULL,
+    [DriverId] INT NOT NULL,
+    [TruckId] INT NOT NULL,
     [DepartureDate] DATETIME NOT NULL,
     [DeliveryDate] DATETIME NOT NULL,
     CONSTRAINT [pk_Shipment] PRIMARY KEY CLUSTERED([ShipmentId]),
