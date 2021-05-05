@@ -1,0 +1,15 @@
+USE SqlModule
+GO
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+/* OR SET TRANSACTION ISOLATION LEVEL SERIALIZABLE */
+GO
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+/*Using Connection1 create Transaction1 with SELECT statement to get all data from Route table where RouteId = 2.*/
+BEGIN TRANSACTION Transaction1
+	SELECT *
+	FROM [dbo].[Route]
+	WHERE RouteId = 2;
+	WAITFOR DELAY '00:00:10';
+COMMIT TRANSACTION Transaction1
