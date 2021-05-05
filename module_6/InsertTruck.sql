@@ -1,0 +1,2 @@
+INSERT INTO dbo.Truck
+VALUES ('MAN', '1ABC234', 2000, 17500, 20, 95);
