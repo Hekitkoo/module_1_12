@@ -1,0 +1,4 @@
+<ROOT>
+    <Filter FieldName="LastName" FieldValue="Petr"/>
+    <Filter FieldName="FirstName" FieldValue="Adam"/>
+</ROOT>
