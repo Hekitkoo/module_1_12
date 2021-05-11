@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.Core", "ORM.Core\ORM.Core.csproj", "{24CC16A3-68E2-49C2-AE4A-0BCA92EF33B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.Console", "ORM.Console\ORM.Console.csproj", "{686C60B5-4B59-4027-9467-87B0EF94E3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.ADO", "ORM.ADO\ORM.ADO.csproj", "{EFF5391F-1BA7-45FE-9347-A9578A67B884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24CC16A3-68E2-49C2-AE4A-0BCA92EF33B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CC16A3-68E2-49C2-AE4A-0BCA92EF33B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CC16A3-68E2-49C2-AE4A-0BCA92EF33B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CC16A3-68E2-49C2-AE4A-0BCA92EF33B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{686C60B5-4B59-4027-9467-87B0EF94E3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686C60B5-4B59-4027-9467-87B0EF94E3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686C60B5-4B59-4027-9467-87B0EF94E3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686C60B5-4B59-4027-9467-87B0EF94E3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF5391F-1BA7-45FE-9347-A9578A67B884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF5391F-1BA7-45FE-9347-A9578A67B884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF5391F-1BA7-45FE-9347-A9578A67B884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF5391F-1BA7-45FE-9347-A9578A67B884}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
