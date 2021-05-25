@@ -13,6 +13,7 @@ namespace ORM.ADO
         public IRepository<Route, int> Routes { get; private set; }
 
         public IRepository<Route, int> DisconnectedRoutes { get; private set; }
+        
         private SqlConnection Context { get; }
         private SqlTransaction Transaction { get; }
         
@@ -50,6 +51,7 @@ namespace ORM.ADO
 
             Warehouses = null;
             Routes = null;
+            DisconnectedRoutes = null;
         }
     }
 }
