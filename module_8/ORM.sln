@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.ADO", "ORM.ADO\ORM.ADO.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.EF", "ORM.EF\ORM.EF.csproj", "{2BA5F0C2-5E11-433D-98E2-C79E738E828C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM.Dapper", "ORM.Dapper\ORM.Dapper.csproj", "{18E74F73-C489-44B4-8172-BEBB3036A0C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2BA5F0C2-5E11-433D-98E2-C79E738E828C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BA5F0C2-5E11-433D-98E2-C79E738E828C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BA5F0C2-5E11-433D-98E2-C79E738E828C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E74F73-C489-44B4-8172-BEBB3036A0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E74F73-C489-44B4-8172-BEBB3036A0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E74F73-C489-44B4-8172-BEBB3036A0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E74F73-C489-44B4-8172-BEBB3036A0C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
