@@ -16,7 +16,6 @@ namespace ORM.Dapper
         public DapperUnitOfWork(string connectionString)
         {
             Context = new SqlConnection(connectionString);
-            Context.Open();
             Routes = new DapperRouteRepository(Context);
         }
 
@@ -38,6 +37,8 @@ namespace ORM.Dapper
             }
             Context.Close();
             Context.Dispose();
+
+            Routes = null;
         }
     }
 }
