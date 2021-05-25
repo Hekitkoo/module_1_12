@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using ORM.Core.Interfaces;
 using ORM.Core.Models;
 
-namespace ORM.ADO.Repositories
+namespace ORM.ADO.Repositories.Connected
 {
     public class RouteRepository : Repository, IRepository<Route, int>
     {
