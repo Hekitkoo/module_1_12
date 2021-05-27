@@ -27,7 +27,7 @@ namespace ORM.EF.Repositories
 
         public IEnumerable<Route> GetAll()
         {
-            return context.Routes;
+            return context.Routes.ToList();
         }
 
         public void Update(Route entity)

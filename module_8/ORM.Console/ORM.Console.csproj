@@ -8,6 +8,7 @@
     <ItemGroup>
       <ProjectReference Include="..\ORM.ADO\ORM.ADO.csproj" />
       <ProjectReference Include="..\ORM.Dapper\ORM.Dapper.csproj" />
+      <ProjectReference Include="..\ORM.EF\ORM.EF.csproj" />
     </ItemGroup>
 
 </Project>

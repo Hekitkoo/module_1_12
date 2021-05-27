@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Data;
+using Microsoft.EntityFrameworkCore;
 using ORM.Core.Models;
 
 namespace ORM.EF
@@ -22,11 +23,24 @@ namespace ORM.EF
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(builder);
+            builder.Entity<Route>()
+                .ToTable(nameof(Route))
+                .Property(o => o.Id)
+                .HasColumnName("RouteId");
 
             builder.Entity<Route>()
                 .ToTable(nameof(Route))
                 .HasKey(o => o.Id);
+
+            builder.Entity<Route>()
+                .ToTable(nameof(Route))
+                .Ignore(o => o.DestinationWarehouse);
+            
+            builder.Entity<Route>()
+                .ToTable(nameof(Route))
+                .Ignore(o => o.OriginWarehouse);
+            
+            base.OnModelCreating(builder);
         }
     }
 }
