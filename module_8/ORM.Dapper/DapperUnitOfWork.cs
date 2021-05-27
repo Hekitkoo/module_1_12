@@ -15,8 +15,7 @@ namespace ORM.Dapper
 
         public DapperUnitOfWork(string connectionString)
         {
-            Context = new SqlConnection(connectionString);
-            Routes = new DapperRouteRepository(Context);
+            Routes = new DapperRouteRepository(connectionString);
         }
 
         public void RollBack()

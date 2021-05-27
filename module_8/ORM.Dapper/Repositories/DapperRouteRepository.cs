@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using ORM.Core.Interfaces;
 using ORM.Core.Models;
 using DapperExtensions;
@@ -8,56 +10,57 @@ namespace ORM.Dapper.Repositories
 {
     public class DapperRouteRepository : IRepository<Route, int>
     {
-        private readonly SqlConnection connection;
+        private readonly string connectionString;
 
-        public DapperRouteRepository(SqlConnection connection)
+        public DapperRouteRepository(string connectionString)
         {
-            this.connection = connection;
+            DapperExtensions.DapperExtensions.SetMappingAssemblies(new[] { typeof(RouteMappedMapper).Assembly });
+            this.connectionString = connectionString;
         }
 
         public void Create(Route entity)
         {
-            using var sqlConnection = connection;
-            connection.Open();
-            connection.Insert(entity);
-            connection.Close();
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+            dbConnection.Insert(entity);
+            dbConnection.Close();
         }
 
         public Route GetById(int entityId)
         {
-            using var sqlConnection = connection;
-            
-                connection.Open();
-                var route = connection.Get<Route>(entityId);
-                connection.Close();
-            
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+            var route = dbConnection.Get<Route>(entityId);
+            dbConnection.Close();
+
             return route;
         }
 
         public IEnumerable<Route> GetAll()
         {
-            using var sqlConnection = connection;
-            connection.Open();
-            var routes = sqlConnection.GetList<Route>();
-            sqlConnection.Close();
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+            var routes = dbConnection.GetList<Route>().ToList();
+            dbConnection.Close();
+
             return routes;
         }
 
         public void Update(Route entity)
         {
-            using var sqlConnection = connection;
-            sqlConnection.Open();
-            sqlConnection.Update(entity);
-            sqlConnection.Close();
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+            dbConnection.Update(entity);
+            dbConnection.Close();
         }
 
         public void Delete(int entityId)
         {
-            using var sqlConnection = connection;
-            sqlConnection.Open();
-            var route = connection.Get<Route>(entityId);
-            sqlConnection.Delete(route);
-            sqlConnection.Close();
+            using IDbConnection dbConnection = new SqlConnection(connectionString);
+            dbConnection.Open();
+            var route = dbConnection.Get<Route>(entityId);
+            dbConnection.Delete(route);
+            dbConnection.Close();
         }
     }
 }
