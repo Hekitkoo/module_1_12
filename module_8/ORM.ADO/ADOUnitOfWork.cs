@@ -9,7 +9,6 @@ namespace ORM.ADO
 {
     public class ADOUnitOfWork : IUnitOfWork, IDisposable
     {
-        public IRepository<Warehouse, int> Warehouses { get; private set; }
         public IRepository<Route, int> Routes { get; private set; }
 
         public IRepository<Route, int> DisconnectedRoutes { get; private set; }
@@ -22,9 +21,8 @@ namespace ORM.ADO
             Context = new SqlConnection(connectionString);
             Context.Open();
             Transaction = Context.BeginTransaction();
-            Warehouses = new WarehouseRepository(Transaction, Context);
-            Routes = new RouteRepository(Transaction, Context);
 
+            Routes = new RouteRepository(Transaction, Context);
             DisconnectedRoutes = new DisconnectedRouteRepository(Transaction, Context);
         }
 
@@ -49,7 +47,6 @@ namespace ORM.ADO
             Context.Close();
             Context.Dispose();
 
-            Warehouses = null;
             Routes = null;
             DisconnectedRoutes = null;
         }

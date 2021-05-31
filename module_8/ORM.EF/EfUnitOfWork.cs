@@ -20,7 +20,8 @@ namespace ORM.EF
 
         public void RollBack()
         {
-            // https://docs.microsoft.com/en-us/ef/core/saving/transactions
+            //As mentioned in https://docs.microsoft.com/en-us/ef/core/saving/transactions
+            //we no need rollback fo EF
         }
 
         public void Commit()

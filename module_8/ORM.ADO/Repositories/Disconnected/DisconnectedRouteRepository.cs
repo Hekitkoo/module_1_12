@@ -29,7 +29,7 @@ namespace ORM.ADO.Repositories.Disconnected
             newRow[nameof(Route.DestinationWarehouseId)] = entity.OriginWarehouseId;
             newRow[nameof(Route.OriginWarehouseId)] = entity.DestinationWarehouseId;
             newRow[nameof(Route.Distance)] = entity.Distance;
-            newRow["RouteId"] = entity.Id;
+            newRow[RouteConstants.RouteIdKey] = entity.Id;
             
             var commandBuilder = new SqlCommandBuilder(sqlDataAdapter);
             sqlDataAdapter.InsertCommand = commandBuilder.GetInsertCommand();
@@ -43,7 +43,7 @@ namespace ORM.ADO.Repositories.Disconnected
             
             return new Route
             {
-                Id = Convert.ToInt32(drFind?["RouteId"]),
+                Id = Convert.ToInt32(drFind?[RouteConstants.RouteIdKey]),
                 OriginWarehouseId = Convert.ToInt32(drFind?[nameof(Route.OriginWarehouseId)]),
                 DestinationWarehouseId = Convert.ToInt32(drFind?[nameof(Route.OriginWarehouseId)]),
                 Distance = Convert.ToDouble(drFind?[nameof(Route.Distance)])
@@ -54,7 +54,7 @@ namespace ORM.ADO.Repositories.Disconnected
         {
             return from DataRow row in routeDataSet.Tables[routeTableName]?.Rows select new Route
             {
-                Id = Convert.ToInt32(row["RouteId"]),
+                Id = Convert.ToInt32(row[RouteConstants.RouteIdKey]),
                 OriginWarehouseId = Convert.ToInt32(row[nameof(Route.OriginWarehouseId)]),
                 DestinationWarehouseId = Convert.ToInt32(row[nameof(Route.OriginWarehouseId)]),
                 Distance = Convert.ToDouble(row[nameof(Route.Distance)])
@@ -83,10 +83,10 @@ namespace ORM.ADO.Repositories.Disconnected
 
         public void LoadData()
         {
-            var command = CreateCommand("SELECT * FROM  [dbo].[Route] WITH(NOLOCK)");
+            var command = CreateCommand(RouteConstants.GetAllQuery);
             sqlDataAdapter = new SqlDataAdapter(command);
             sqlDataAdapter.Fill(routeDataSet, routeTableName);
-            var columns = new[] { routeDataSet.Tables[routeTableName]?.Columns["RouteId"] };
+            var columns = new[] { routeDataSet.Tables[routeTableName]?.Columns[RouteConstants.RouteIdKey] };
             routeDataSet.Tables[routeTableName].PrimaryKey = columns;
         }
     }

@@ -8,7 +8,6 @@ namespace ORM.Dapper
 {
     public class DapperUnitOfWork : IUnitOfWork, IDisposable
     {
-        public IRepository<Warehouse, int> Warehouses { get; private set; }
         public IRepository<Route, int> Routes { get; private set; }
 
         private SqlConnection Context { get; }
@@ -20,12 +19,14 @@ namespace ORM.Dapper
 
         public void RollBack()
         {
-            // https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?redirectedfrom=MSDN&view=net-5.0
+            //As mentioned in https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?redirectedfrom=MSDN&view=net-5.0
+            //we have transaction scope which in exception scope auto rollback it
         }
 
         public void Commit()
         {
-            // https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?redirectedfrom=MSDN&view=net-5.0
+            //As mentioned in https://docs.microsoft.com/en-us/dotnet/api/system.transactions.transactionscope?redirectedfrom=MSDN&view=net-5.0
+            //we have transaction scope which at the end of scope auto Commit changes
         }
 
         public void Dispose()
