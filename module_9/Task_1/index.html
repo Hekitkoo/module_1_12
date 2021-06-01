@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Employee</title>
+</head>
+
+<body>
+    <header>
+        <h1>Employee</h1>
+        <h2>Represents employees</h2>
+    </header>
+    <article>
+        <input type="checkbox" id="ajaxCheckbox">
+        <label for="ajaxCheckbox">Load by inserted data Load by AJAX</label>
+        <br>
+        <br>
+        <label>Please, insert data in the field then press button. * The data must be in the JSON format.</label>
+    </article>
+    <br>
+    <main>
+        <form action="">
+            <textarea>
+[{
+{
+    "type": "FixedSalaryEmployee",
+    "salary": 8000,
+    "name": "Clara",
+    "id": 4
+},
+{
+    "type": "FixedSalaryEmployee",
+    "salary": 1000,
+    "name": "Egor",
+    "id": 5
+}
+}]
+            </textarea>
+        </form>
+        <div class="button">
+            Load data <span class="small progress"></span></input>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Average</th>
+                <th>monthly</th>
+                <th>salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Anna</td>
+                <td>1664</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>1331</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dany</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Clara</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Egor</td>
+                <td>1000</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <label for="sortDataInput">Sort data Get first 'n' names Get last 'n' ids</label>
+        <br>
+        <label for="sortDataInput">+ </label>
+        <input type="text" value="0" id="sortDataInput">
+        <label for="sortDataInput">-</label>
+        <br>
+        <label for="sortDataInput">* Please, enter quantity ("n" ↑) for data you want get.</label>
+    </footer>
+</body>
+
+</html>
