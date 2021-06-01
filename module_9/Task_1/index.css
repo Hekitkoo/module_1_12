@@ -40,13 +40,13 @@ textarea {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 2.25em; /* (container width - part width)/2  */
+	left: 2.25em;
 	width: .5em;
 	height: 1.5em;
 	border-radius: .2em;
 	background: #eee;
-	box-shadow: 0 3.5em #eee; /* container height - part height */
-	transform-origin: 50% 2.5em; /* container height / 2 */
+	box-shadow: 0 3.5em #eee;
+	transform-origin: 50% 2.5em;
 }
 
 .progress:before {
