@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 2</title>
+        <link rel="stylesheet" href="all.css" />
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <header class="box">
+                <h1 class="caption">Employee</h1>
+            </header>
+            <article class="box">
+                <h2 class="represents">Represents employees</h2>
+                <div>
+                    <form class="switch-form">
+                        <input type="checkbox" id="switch" name="switch" />
+                        <label for="switch"><i></i></label>
+                        <span class="on">Load by inserted data</span>
+                        <span class="off">Load by AJAX</span>
+                    </form>
+                    <p>
+                        Please, insert data in the field then press button.
+                        <span class="annotate">
+                            <span class="validation-error-message"><sup>*</sup>The data must be in the JSON format.</span>
+                        </span>
+                    </p>
+                    <form class="form">
+                        <textarea id="json-input" rows="12" cols="77">
+[{
+  "type": "FixedSalaryEmployee",
+  "salary": 8000,
+  "name": "Clara",
+  "Id": 4
+},
+{
+  "type": "FixedSalaryEmployee",
+  "salary": 1000,
+  "name": "Egor",
+  "Id": 5
+}]                        </textarea>
+                    </form>
+                    <div>
+                        <button id="ajax-btn" class="btn btn-load">Load data <span class="fa fa-spinner"></span></button>
+                    </div>
+                </div>
+                <div id="table-holder" class="table-box">
+                    <table id="employee-table" class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Average monthly salary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Anna</td>
+                                <td>1664</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Bob</td>
+                                <td>1331</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Dany</td>
+                                <td>8000</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Clara</td>
+                                <td>8000</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Egor</td>
+                                <td>1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <div class="controlls">
+                        <span class="btn btn-sort">Sort data</span>
+                        <span class="btn btn-get-names">Get first 'n' names</span>
+                        <span class="btn btn-get-ids">Get last 'n' ids</span>
+
+                        <form class="form-controll">
+                            <span class="btn btn-up">+</span>
+                            <input id="count-input" type="text" value="0" />
+                            <span class="btn btn-down">-</span>
+                        </form>
+                    </div>
+                    <span class="annotate rt validation-error-message">* Please, enter quantity ("n" ↑) for data you want get.</span>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
