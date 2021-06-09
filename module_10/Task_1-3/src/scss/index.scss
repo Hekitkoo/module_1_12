@@ -1,0 +1,89 @@
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}
+textarea {
+	width: 550px;
+	height: 210px;
+	overflow: hidden;
+	text-align: left;
+}
+.button {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	width: 95px;
+	text-align: center;
+}
+.progress {
+	position: relative;
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	margin: 0 .5em;
+	font-size: 12px;
+	text-indent: 999em;
+	overflow: hidden;
+	animation: spin 1s infinite steps(8);
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 2.25em;
+		width: .5em;
+		height: 1.5em;
+		border-radius: .2em;
+		background: #eee;
+		box-shadow: 0 3.5em #eee;
+		transform-origin: 50% 2.5em;
+		background: #555;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 2.25em;
+		width: .5em;
+		height: 1.5em;
+		border-radius: .2em;
+		background: #eee;
+		box-shadow: 0 3.5em #eee;
+		transform-origin: 50% 2.5em;
+		transform: rotate(-45deg);
+		background: #777;
+	}
+	>div {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 2.25em;
+			width: .5em;
+			height: 1.5em;
+			border-radius: .2em;
+			background: #eee;
+			box-shadow: 0 3.5em #eee;
+			transform-origin: 50% 2.5em;
+			transform: rotate(-90deg);
+			background: #999;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 2.25em;
+			width: .5em;
+			height: 1.5em;
+			border-radius: .2em;
+			background: #eee;
+			box-shadow: 0 3.5em #eee;
+			transform-origin: 50% 2.5em;
+			transform: rotate(-135deg);
+			background: #bbb;
+		}
+	}
+}
+.small.progress {
+	font-size: 3px;
+}
