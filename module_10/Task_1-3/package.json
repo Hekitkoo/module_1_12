@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "node-sass": "^6.0.0"
+  },
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss src/scss/index.scss -o css src/css/index.css"
+  },
+  "author": "Mykyta",
+  "license": "ISC",
+  "description": ""
+}
